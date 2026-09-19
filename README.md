@@ -10,10 +10,17 @@ New skills can be added as long as they're within the folder.
 
 Current Commands:
 "What time is it?" = Speaks the current time
+
 "Tell me a joke" = Tells a random joke
+
 "What is ____? / "Who is ____?"	= Reads a short Wikipedia summary of topic
+
 "Play _____"	= Opens a Spotify search for the song
+
 "Remind me to ____ "	= Saves a new reminder
+
 "List my reminders"	= Reads back all saved reminders
+
 "Clear my reminders"	= Deletes all saved reminders
+
 "Exit" / "quit" / "stop"/ "End the Program" =	Ends the program
