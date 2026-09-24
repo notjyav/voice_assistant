@@ -1,5 +1,7 @@
 Python Voice Assistant
 
+<img width="1254" height="1254" alt="Logo" src="https://github.com/user-attachments/assets/eb5760f8-c73a-4425-a7f8-da5fd71c0a0a" />
+
 A simple, extensible voice assistant built in Python. It listens for spoken commands via your microphone, matches them to a set of "skills," and responds using text to speech.
 
 It features Google Web Speech API for listening and for offline text to speech.
