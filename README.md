@@ -27,3 +27,5 @@ Current Commands:
 "Clear my reminders"	= Deletes all saved reminders
 
 "Exit" / "quit" / "stop"/ "End the Program" =	Ends the program
+
+The project is still currently ongoing and future features are soon to be added.
