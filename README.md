@@ -68,3 +68,4 @@ The goal is to further expand the capabilities rather then have it be a simple v
 - Having Alerts for reminders
 - Remembering personalized details regarding the user
 
+##
