@@ -50,6 +50,8 @@ python3 assistant.py
 
 "Clear my reminders"	= Deletes all saved reminders
 
+"What's the weather in ______" = Tells weather in that location
+
 "Exit" / "quit" / "stop"/ "End the Program" =	Ends the program
 
 ## Future of the Project
@@ -57,3 +59,12 @@ python3 assistant.py
 The project is still currently ongoing and future features are soon to be added.
 
 The goal is to further expand the capabilities rather then have it be a simple voice assistance, I want to further refine the projects capabilites and transform it into a personalized assistant that would be able to assist in everyday tasks.
+
+## Current Goals
+
+- Making the program feel more like an assistant
+- Follow up questions to ask the user to make it feel natural
+- Implementation of an LLM into the program
+- Having Alerts for reminders
+- Remembering personalized details regarding the user
+
