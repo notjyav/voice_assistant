@@ -8,7 +8,6 @@ class MusicSkill(Skill):
         return query.startswith("play") or "play music" in query or "play song" in query
 
     def _extract_search_term(self, query: str) -> str:
-        """'play bohemian rhapsody' -> 'bohemian rhapsody'"""
         for phrase in ["play song", "play music", "play"]:
             if query.startswith(phrase):
                 return query[len(phrase):].strip()
