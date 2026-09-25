@@ -4,6 +4,8 @@ from skills.joke_skill import JokeSkill
 from skills.wikipedia_skill import WikipediaSkill
 from skills.music_skill import MusicSkill
 from skills.reminder_skill import ReminderSkill
+from skills.weather_skill import WeatherSkill
+
 
 WAKE_WORD = "hey assistant"
 
@@ -13,6 +15,7 @@ SKILLS = [
     WikipediaSkill(),
     MusicSkill(),
     ReminderSkill(),
+    WeatherSkill(),
 ]
 
 def handle_query(query: str) -> bool:
