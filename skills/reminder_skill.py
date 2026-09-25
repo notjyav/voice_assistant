@@ -17,8 +17,6 @@ def _load_reminders() -> list[str]:
 
 
 def _save_reminders(reminders: list[str]) -> None:
-    """Write the current list of reminders to disk, overwriting
-    whatever was there before."""
     with open(REMINDERS_FILE, "w") as f:
         json.dump(reminders, f, indent=2)
 
