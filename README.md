@@ -2,6 +2,7 @@
 
 <img width="1254" height="1254" alt="PyAssist" src="https://github.com/user-attachments/assets/801b6be4-fa0c-45f4-90b4-19cb0a1b633a" />
 
+#
 
 A simple, extensible voice assistant built in Python. It listens for spoken commands via your microphone, matches them to a set of "skills," and responds using text to speech.
 
