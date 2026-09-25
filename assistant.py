@@ -18,8 +18,9 @@ SKILLS = [
 def handle_query(query: str) -> bool:
     if not query:
         return True
-
-    if "exit" in query or "quit" in query or "stop" in query or "end the program" in query:
+    
+    words = query.split()
+    if "exit" in words or "quit" in words or "stop" in words or "end the program" in query:
         speak("Goodbye!")
         return False
 
