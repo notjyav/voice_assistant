@@ -3,6 +3,7 @@ import pyttsx3
 
 _engine = pyttsx3.init()
 
+
 def speak(text: str) -> None:
     print(f"Assistant: {text}")
     try:
@@ -11,15 +12,16 @@ def speak(text: str) -> None:
     except Exception as e:
         print(f"[speech output unavailable: {e}]")
 
+
 def listen(timeout: int = 8, phrase_time_limit: int = 16) -> str:
     recognizer = sr.Recognizer()
     recognizer.pause_threshold = 1.6
 
     try:
         with sr.Microphone() as source:
-            recognizer.adjust_for_ambient_noise(source, duration = 1.0)
+            recognizer.adjust_for_ambient_noise(source, duration=1.0)
             recognizer.dynamic_energy_threshold = False
-            print("go ahead...")
+            print("Go ahead...")
             audio = recognizer.listen(
                 source, timeout=timeout, phrase_time_limit=phrase_time_limit
             )
@@ -27,7 +29,7 @@ def listen(timeout: int = 8, phrase_time_limit: int = 16) -> str:
         print("[no speech detected in time]")
         return ""
     except OSError as e:
-        print(f"[mircrophone unavailable: {e}]")
+        print(f"[microphone unavailable: {e}]")
         return ""
 
     try:
@@ -39,4 +41,4 @@ def listen(timeout: int = 8, phrase_time_limit: int = 16) -> str:
     except sr.RequestError as e:
         speak("I'm having trouble reaching the speech service.")
         print(f"[recognition request failed: {e}]")
-        return "" 
+        return ""
