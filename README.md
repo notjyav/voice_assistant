@@ -46,6 +46,8 @@ python3 assistant.py
 
 "List my reminders"	= Reads back all saved reminders
 
+"Remove/Delete reminder ___" = Removes a specific reminder
+
 "Clear my reminders"	= Deletes all saved reminders
 
 "Exit" / "quit" / "stop"/ "End the Program" =	Ends the program
