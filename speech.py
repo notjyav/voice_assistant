@@ -11,13 +11,15 @@ def speak(text: str) -> None:
     except Exception as e:
         print(f"[speech output unavailable: {e}]")
 
-def listen(timeout: int = 8, phrase_time_limit: int = 12) -> str:
+def listen(timeout: int = 8, phrase_time_limit: int = 16) -> str:
     recognizer = sr.Recognizer()
-    recognizer.pause_threshold = 1.2
+    recognizer.pause_threshold = 1.6
 
     try:
         with sr.Microphone() as source:
             recognizer.adjust_for_ambient_noise(source, duration = 1.0)
+            recognizer.dynamic_energy_threshold = False
+            print("go ahead...")
             audio = recognizer.listen(
                 source, timeout=timeout, phrase_time_limit=phrase_time_limit
             )
