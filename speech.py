@@ -21,7 +21,7 @@ def listen(timeout: int = 8, phrase_time_limit: int = 16) -> str:
         with sr.Microphone() as source:
             recognizer.adjust_for_ambient_noise(source, duration=1.0)
             recognizer.dynamic_energy_threshold = False
-            print("Go ahead...")
+            print("Listening...")
             audio = recognizer.listen(
                 source, timeout=timeout, phrase_time_limit=phrase_time_limit
             )
